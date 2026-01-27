@@ -1,0 +1,91 @@
+.sidebar {
+    width: 80px;
+    height: 100vh;
+    background-color: var(--bg-card);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    border-right: 1px solid var(--border-color);
+    justify-content: space-between;
+}
+
+.sidebar-logo {
+    margin-bottom: 40px;
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #7b61ff;
+    /* Purple accent for logo */
+    color: white;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 1;
+    align-items: center;
+}
+
+.nav-item {
+    color: var(--text-secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.nav-item span {
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.nav-item:hover,
+.nav-item.active {
+    color: var(--accent-green);
+}
+
+.nav-item.active::before {
+    content: '';
+    position: absolute;
+    left: -28px;
+    /* Align with sidebar edge */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 30px;
+    background-color: var(--accent-green);
+    border-radius: 0 4px 4px 0;
+}
+
+.sidebar-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    margin-top: auto;
+}
+
+.user-avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    transition: border-color 0.2s;
+}
+
+.user-avatar img:hover {
+    border-color: var(--accent-green);
+}

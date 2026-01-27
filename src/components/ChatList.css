@@ -1,0 +1,247 @@
+.chat-list-container {
+    width: 350px;
+    background-color: var(--bg-card);
+    border-right: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 20px;
+    overflow-y: auto;
+}
+
+.chat-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.search-bar {
+    flex: 1;
+    background-color: var(--bg-hover);
+    border-radius: 12px;
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-icon {
+    color: var(--text-secondary);
+}
+
+.search-bar input {
+    width: 100%;
+    font-size: 14px;
+}
+
+.user-profile {
+    position: relative;
+}
+
+.user-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Titles */
+.list-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-primary);
+}
+
+.list-title h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.title-actions {
+    color: var(--text-secondary);
+    cursor: pointer;
+}
+
+/* Tabs */
+.chat-tabs {
+    display: flex;
+    gap: 10px;
+}
+
+.tab-btn {
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    color: var(--text-secondary);
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    transition: all 0.2s;
+}
+
+.tab-btn.active,
+.tab-btn:hover {
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+    border-color: transparent;
+}
+
+/* Messages List */
+.messages-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
+    /* fills space */
+}
+
+.chat-item {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.chat-item:hover {
+    background-color: var(--bg-hover);
+}
+
+.avatar-wrapper {
+    position: relative;
+}
+
+.avatar-wrapper img {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.status-dot {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    background-color: var(--accent-green);
+    border-radius: 50%;
+    border: 2px solid var(--bg-card);
+}
+
+.chat-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+    /* text overflow fix */
+}
+
+.chat-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.chat-top h3 {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+    color: var(--text-primary);
+}
+
+.chat-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-bottom p {
+    font-size: 12px;
+    color: var(--text-secondary);
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 140px;
+}
+
+.chat-bottom p.typing {
+    color: var(--accent-green);
+    font-style: italic;
+}
+
+.unread-badge {
+    background-color: var(--accent-green);
+    color: white;
+    font-size: 10px;
+    min-width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Calls Section */
+.calls-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 10px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-header h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.new-meet-btn {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: var(--text-secondary);
+}
+
+.calls-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.call-item {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.call-status {
+    color: var(--accent-green) !important;
+}
+
+.call-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.icon-btn {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: var(--bg-hover);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
